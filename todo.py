@@ -151,9 +151,9 @@ class TodoApp(ft.Column):
         count = 0
         for task in self.tasks.controls:
             task.visible = (
-                status == "all"
-                or (status == "active" and task.completed == False)
-                or (status == "completed" and task.completed)
+                status == "Todos"
+                or (status == "Activo" and task.completed == False)
+                or (status == "cCompletados" and task.completed)
             )
             if not task.completed:
                 count += 1
